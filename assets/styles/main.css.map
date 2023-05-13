@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/base/_typography.scss","../scss/base/_normalize.scss","../scss/components/_avatar.scss","../scss/abstracts/_mixins.scss","../scss/abstracts/_colors.scss"],"names":[],"mappings":"AAEQ;ACFR;EACI;EACA;;;AAGJ;EACI;;;ACNJ;ECCI;EACA,QDDqB;ECErB,kBCEU;EDDV;EACA","file":"main.css"}
