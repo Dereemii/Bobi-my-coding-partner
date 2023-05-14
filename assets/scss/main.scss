@@ -5,12 +5,15 @@
 // Abstracts
 @import 'abstracts/colors';
 @import 'abstracts/mixins';
+@import 'abstracts/variables';
 
 
 // Components
-
 @import 'components/button'; 
 @import 'components/avatar';
 @import 'components/chatbubble';
 
+// Layout
+
+@import 'layout/theme';
 

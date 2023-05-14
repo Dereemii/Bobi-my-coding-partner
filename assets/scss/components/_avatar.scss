@@ -1,3 +1,18 @@
-.avatar-circle {
-  @include circle(100px, 100px, $green-lemon, $black);
+.avatar {
+  @include circle($green-lemon, $black);
+
+  &--small {
+    width: $circle-size-small;
+    height: $circle-size-small;
+  }
+
+  &--medium {
+    width: $circle-size-medium;
+    height: $circle-size-medium;
+  }
+  display: flex;
+
+  &--image {
+    margin: auto;
+  }
 }

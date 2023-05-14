@@ -10,7 +10,7 @@
 
 > UI challenge from FrontEnd Fridays. Technologies: HTML, CSS, SCSS.
 
-### ✨ [Demo](/)
+### ✨ [Demo](https://dereemii.github.io/Bobi-my-coding-partner/)
 
 [Figma Link](https://www.figma.com/file/QsU34MErBtaeVSXq7DHPYg/My-Coding-Partner?type=design&node-id=3%3A26&t=Om5kNVDs5auSZCxA-1)
 

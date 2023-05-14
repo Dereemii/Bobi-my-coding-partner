@@ -1,4 +1,8 @@
 {
+  "name": "bobi-coding-partner",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "devDependencies": {
     "sass": "^1.62.1",
     "stylelint": "^15.6.1",

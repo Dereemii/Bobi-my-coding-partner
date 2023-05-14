@@ -1,8 +1,7 @@
-@mixin circle($width, $height, $background-color, $border-color) {
-    width: $width;
-    height: $height;
+@mixin circle($background-color, $border-color) {
     background-color: $background-color;
     border-radius: 50%;
     outline: 2px solid $border-color;
+    border-radius: 50%;
 }
     
