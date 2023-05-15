@@ -1,19 +1,26 @@
 @import 'https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap';
+.header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
 body, html, * {
   margin: 0;
   padding: 0;
-}
-
-* {
   box-sizing: border-box;
 }
 
+.button {
+  color: #FFF;
+  height: 3rem;
+  border: solid 2px #000;
+  font-weight: 700;
+  font-size: 24px;
+}
+
 .avatar {
-  background-color: #59F423;
   border-radius: 50%;
   outline: 2px solid #000;
-  border-radius: 50%;
-  display: flex;
 }
 .avatar--small {
   width: 45px;
@@ -24,28 +31,110 @@ body, html, * {
   height: 168px;
 }
 .avatar--image {
-  margin: auto;
+  width: inherit;
+  padding: 5px;
+}
+
+.chatbot-container:has(div, article) div:first-child {
+  background-color: #59F423;
+}
+
+.chatbot-container:has(div, article) div:last-child {
+  background-color: #F48723;
+}
+
+.chatbot-container {
+  display: flex;
+  margin-block: 2rem;
+  gap: 1rem;
+}
+
+.chatbot-container article {
+  background-color: #D9D9D9;
+  padding: 1rem;
+  max-width: 259px;
+  font-size: 12px;
+}
+
+.code {
+  font-style: italic;
+  margin-block-start: 1rem;
+  display: grid;
 }
 
 .container {
-  background-color: #BF06B8;
-  font-family: "Inter", sans-serif;
-  container: desktop/inline-size;
+  font-family: Inter, sans-serif;
   container: mobile/inline-size;
+  margin-block: 1rem;
 }
 
-@container desktop (min-width: 500px) {
-  header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+.chatbot {
+  margin-inline: 12rem;
+}
+
+.red {
+  color: #F24949;
+}
+
+.blue {
+  color: #292795;
+}
+
+.bg-fuchsia {
+  background-color: #BF06B8;
+}
+
+.bg-green {
+  background-color: #59F423;
+}
+
+.bg-orange {
+  background-color: #F48723;
+}
+
+.bg-dark-green {
+  background-color: #1E5D61;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 1rem;
+  color: #FFF;
+}
+
+.chatbot-send {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+}
+
+.chatbot-send textarea {
+  padding: 1rem;
+}
+
+.chatbot-container:nth-child(even) {
+  justify-content: end;
+}
+
+@container mobile (width <= 1024px) {
+  .chatbot {
+    margin-inline: 1rem;
+  }
+  .header {
+    grid-template-columns: 1fr;
+  }
+  .chatbot-send {
+    grid-auto-flow: row;
   }
 }
-@container mobile (max-width: 500px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (width <= 412px) {
+  .chatbot-container:nth-child(even) {
+    margin-left: 60px;
+  }
+  .chatbot-container:nth-child(odd) {
+    margin-right: 60px;
   }
 }
 

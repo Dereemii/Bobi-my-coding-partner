@@ -8,16 +8,74 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <title>Bobi, My coding partner</title>
   </head>
-  <body>
+
+  <body class="bg-fuchsia">
     <main class="container">
-      <header class="item">
+      <header class="header">
         <h1>Bobi, My Coding Partner</h1>
-        <div class="avatar avatar--medium">
-          <img class="avatar--image" src="/assets/images/bobi-image.svg" alt="" />
+        <div class="avatar avatar--medium bg-green">
+          <img
+            class="avatar--image"
+            src="/assets/images/bobi-image.svg"
+            alt=""
+          />
         </div>
       </header>
+      <section class="chatbot">
+        <div class="chatbot-container">
+          <div class="avatar avatar--small">
+            <img
+              class="avatar--image"
+              src="/assets/images/bobi-image.svg"
+              alt=""
+            />
+          </div>
+          <article>
+            <p>Hello, world! What are we coding today?</p>
+          </article>
+        </div>
 
-      <section class="chatbot"></section>
+        <div class="chatbot-container">
+          <article>
+            <p>
+              Hi, Bobi, how can I center align vertically all elements inside a
+              div container?
+            </p>
+          </article>
+          <div class="avatar avatar--small">
+            <img class="avatar--image" src="/assets/images/arale.png" alt="" />
+          </div>
+        </div>
+
+        <div class="chatbot-container">
+          <div class="avatar avatar--small">
+            <img
+              class="avatar--image"
+              src="/assets/images/bobi-image.svg"
+              alt=""
+            />
+          </div>
+          <article>
+            <p>
+              You can use align-items: center in CSS so the div container aligns
+              vertically all its children elements like this:
+            </p>
+            <p class="code">
+              <span> <span class="red">.container</span> <span>{</span></span> 
+              <span>display: <span class="blue">flex</span>; </span>
+              <span> align-items: <span class="blue">center</span>;</span>
+              <span>}</span>
+            </p>
+          </article>
+        </div>
+
+        <section class="chatbot-send">
+          <textarea name="" id="" cols="30" rows="10">
+Can you share the HTML markup snippet, too?</textarea
+          >
+          <button class="button bg-dark-green">Send</button>
+        </section>
+      </section>
     </main>
   </body>
 </html>

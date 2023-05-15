@@ -1,5 +1,5 @@
 .avatar {
-  @include circle($green-lemon, $black);
+  @include circle($black);
 
   &--small {
     width: $circle-size-small;
@@ -10,9 +10,21 @@
     width: $circle-size-medium;
     height: $circle-size-medium;
   }
-  display: flex;
 
-  &--image {
-    margin: auto;
+  &--image{
+    width: inherit;
+    padding: 5px
   }
+
+
 }
+
+.chatbot-container:has(div, article) div:first-child {
+  background-color: $green-lemon;
+}
+
+.chatbot-container:has(div, article) div:last-child {
+  background-color: $orange;
+}
+
+

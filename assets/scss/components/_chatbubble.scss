@@ -1,0 +1,19 @@
+
+.chatbot-container{
+   display: flex;
+    margin-block: 2rem;
+    gap: 1rem;
+}
+
+.chatbot-container article {
+    background-color: $gray;
+    padding: 1rem;
+    max-width: 259px;
+    font-size: 12px;
+}
+
+.code{
+    font-style: italic;
+    margin-block-start: 1rem;
+    display: grid;
+}
